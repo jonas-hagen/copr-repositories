@@ -5,7 +5,7 @@
 
 Name:           acmed
 Summary:        A client for the ACME protocol.
-Version:        0.16.0
+Version:        0.17.0
 Release:        1%{?dist}
 License:        MIT
 Url:            https://github.com/breard-r/acmed
