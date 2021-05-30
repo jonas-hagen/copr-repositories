@@ -33,7 +33,7 @@ make
 %install
 make DESTDIR=%{buildroot} install
 mkdir -p %{buildroot}%{_unitdir}
-install -m644 contrib/acmed.service.example %{buildroot}%{_unitdir}/acmed.service
+install -m644 contrib/acmed.service %{buildroot}%{_unitdir}/acmed.service
 sed -i "s:/usr/local/bin/acmed:%{_bindir}/acmed:" %{buildroot}%{_unitdir}/acmed.service
 sed -i "s:/etc/acmed/acmed.pid:%{_localstatedir}/run/acmed.pid:" %{buildroot}%{_unitdir}/acmed.service
 sed -i "s:/etc/acmed:%{_sysconfdir}/acmed:" %{buildroot}%{_unitdir}/acmed.service
