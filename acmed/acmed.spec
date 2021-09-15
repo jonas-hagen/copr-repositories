@@ -12,6 +12,7 @@ License:        MIT or ASL 2.0
 Url:            https://github.com/breard-r/acmed
 Source0:        https://github.com/breard-r/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 %define source0sha256 ad8b44fa7efb2e7d72c69f3e20cbbb2119a1346e27a343e6471ea7f45d9fe5c8
+ExclusiveArch:  %{rust_arches}
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 BuildRequires:  make
 BuildRequires:  openssl-devel
